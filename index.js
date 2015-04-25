@@ -15,7 +15,7 @@ var server = http.createServer(app);
 app.set('port', (process.env.PORT || 5000))
 
 app.get(route, function (req, res) {
-  res.sendfile('main.html');
+  res.sendfile('index.html');
 });
 
 server.listen(app.get('port'), function() {
