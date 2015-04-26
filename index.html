@@ -9,6 +9,7 @@
 	<script type="text/javascript" src="./lib/bootstrap/dist/js/bootstrap.min.js"></script>
 
 	<link rel="stylesheet" href="./src/css/style.css">
+	<script type="text/javascript" src="./src/main.js"></script>
 </head>
 <nav class="navbar navbar-inverse navbar-fixed-top">
 	<div class="container-fluid">
@@ -32,15 +33,6 @@
 				<li><a href="#">Forum</a></li>
 				<li><a href="#">Streams</a></li>
 				<li><a href="#">About</a></li>
-			</ul>
-			
-			<ul class="nav navbar-nav navbar-right">
-				<form class="navbar-form navbar-left" role="search">
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Search">
-					</div>
-					<button type="submit" class="btn btn-default">Submit</button>
-				</form>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 
@@ -66,15 +58,15 @@
 					<div>
 						<h3>NAS</h3>
 						<div>
-							<a href="media.html" class="figure"><img src="src/images/games.jpg" alt=""></a>
-							<span><a href="games.html">Private NAS System Login!</a></span>
+							<a class="figure"><img src="src/images/games.jpg"></a>
+							<span>Private NAS System Login!</span>
 						</div>
 					</div>
 					<div>
 						<h3>Streaming</h3>
 						<div>
-							<a href="media.html" class="figure"><img src="src/images/media.jpg" alt=""></a>
-							<span><a href="media.html">Watch us Play!</a></span>
+							<a class="figure"><img src="src/images/media.jpg" id="streamsBtn"></a>
+							<span>Watch us Play!</span>
 						</div>
 					</div>
 				</div>
