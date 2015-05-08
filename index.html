@@ -11,62 +11,54 @@
 	<link rel="stylesheet" href="./src/css/style.css">
 	<script type="text/javascript" src="./src/main.js"></script>
 </head>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-	<div class="container-fluid">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#">
+<nav class="navbar navbar-inverse navbar-fixed-top customNav">
+	<div id="container">
+		<div class="collapse navbar-collapse" id="navImg">
+			<a class="nav navbar-nav">
 				<img id="logo" alt="Brand" src="src/images/logo.png">
 			</a>
 		</div>
-
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<div class="collapse navbar-collapse" id="navButtons">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Games<span class="sr-only">(current)</span></a></li>
-				<li><a href="#">Forum</a></li>
+				<li ><a href="#">Games<span class="sr-only">(current)</span></a></li>
+				<li class="active"><a href="#">Forum</a></li>
 				<li><a href="#">Streams</a></li>
 				<li><a href="#">About</a></li>
 			</ul>
-		</div><!-- /.navbar-collapse -->
-
-	</div><!-- /.container-fluid -->
+		</div>
+	</div>
 </nav>
 <body>
-	<div id="body">
-		<div>
+	<div id="background">
+		<div id="body">
 			<div>
-				<div class="featured">
-					<img src="src/images/featured-game.png" alt="">
-				</div>
-				<div class="section">
-					<div>
-						<h3>About Us</h3>
-						<div>
-							<p>
-								The Exordium is a Gaming Community in which we play a wide variety of games like World of Warcraft, Star Wars The Old Republic, League of Legends etc and many more, as a group.  Some games like Minecraft are hosted on our own personal server.  This gives us maximum control and maximum perfomance 
-								as we have complete control over all resources rather than renting off another company. We even have our own Streaming Server !
-							</p>
-						</div>
+				<div>
+					<div class="featured">
+						<img src="src/images/featured-game.png" alt="">
 					</div>
-					<div>
-						<h3>NAS</h3>
+					<div class="section">
 						<div>
-							<a class="figure"><img src="src/images/games.jpg"></a>
-							<span>Private NAS System Login!</span>
+							<h3>About Us</h3>
+							<div>
+								<p>
+									The Exordium is a Gaming Community in which we play a wide variety of games like World of Warcraft, Star Wars The Old Republic, League of Legends etc and many more, as a group.  Some games like Minecraft are hosted on our own personal server.  This gives us maximum control and maximum perfomance 
+									as we have complete control over all resources rather than renting off another company. We even have our own Streaming Server !
+								</p>
+							</div>
 						</div>
-					</div>
-					<div>
-						<h3>Streaming</h3>
 						<div>
-							<a class="figure"><img src="src/images/media.jpg" id="streamsBtn"></a>
-							<span>Watch us Play!</span>
+							<h3>NAS</h3>
+							<div>
+								<a class="figure"><img src="src/images/games.jpg"></a>
+								<span>Private NAS System Login!</span>
+							</div>
+						</div>
+						<div>
+							<h3>Streaming</h3>
+							<div>
+								<a class="figure"><img src="src/images/media.jpg" id="streamsBtn"></a>
+								<span>Watch us Play!</span>
+							</div>
 						</div>
 					</div>
 				</div>

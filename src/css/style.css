@@ -9,123 +9,42 @@
 	src: url('../fonts/Philosopher-Bold/Philosopher-Bold.eot');
 	src: url('../fonts/Philosopher-Bold/Philosopher-Bold.woff') format('woff'), url('../fonts/Philosopher-Bold/Philosopher-Bold.ttf') format('truetype'), url('../fonts/Philosopher-Bold/Philosopher-Bold.svg') format('svg');
 }
+#logo{
+	height: 100%;
+}
+.customNav{
+	height: 195px;
+	background: url(../images/bg-header2.png) repeat-x top center;
+	border: transparent;
+}
+.customNav #container{
+	height:100%;
+	background: url(../images/bg-header.png) no-repeat top center;
+}
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+}
+.navbar .navbar-collapse {
+	text-align: center;
+}
+#navImg{
+	padding-top: 25px;
+}
+#navButtons{
+	padding-top: 5px;
+}
 body {
 	background: url(../images/bg-body.jpg) repeat;
-	color: #727272;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	line-height: 1;
-	margin: 0;
-	min-width: 960px;
-	padding: 0;
-	padding-top: 50px;
+	padding-top: 145px;
 }
 #background {
-	background: url(../images/bg-page.jpg) no-repeat top center;
-	margin: 0;
-	padding: 0;
-}
-#header {
-	background: url(../images/bg-header2.png) repeat-x top center;
-	margin: 0;
-	padding: 0;
-}
-#header > div {
-	background: url(../images/bg-header.png) no-repeat top center;
-	margin: 0;
-	padding: 0;
-}
-#header > div > div {
-	height: 147px;
-	margin: 0 auto;
-	padding: 49px 0 0;
-	position: relative;
-	width: 960px;
-	z-index: 5;
-}
-#header a.logo {
-	display: block;
-	margin: 0 auto;
-	padding: 0;
-	width: 540px;
-}
-#header a.logo img {
-	border: 0;
-	display: block;
-}
-#header ul {
-	background: url(../images/bg-navigation.png) no-repeat center center;
-	bottom: -107px;
-	height: 98px;
-	left: 30px;
-	margin: 0 auto;
-	overflow: hidden;
-	padding: 9px 17px;
-	position: absolute;
-	width: 865px;
-}
-#header ul li {
-	display: block;
-	float: left;
-	list-style: none;
-	margin: 0 5px;
-	padding: 0;
-}
-#header ul li a {
-	background: url(../images/menu.png) no-repeat;
-	color: #a8a8a8;
-	display: block;
-	font-family: 'Philosopher-Bold';
-	font-size: 16px;
-	font-weight: normal;
-	height: 98px;
-	letter-spacing: 0.07em;
-	line-height: 104px;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	width: 163px;
-}
-#header ul li #menu1 {
-	background-position: 0 0;
-}
-#header ul li #menu2 {
-	background-position: -168px 0;
-}
-#header ul li #menu3 {
-	background-position: -335px 0;
-}
-#header ul li #menu4 {
-	background-position: -502px 0;
-}
-#header ul li #menu5 {
-	background-position: -669px 0;
-}
-#header ul li a:hover, #header ul li.selected a {
-	color: #fff;
-}
-#header ul li #menu1:hover, #header ul li.selected #menu1 {
-	background-position: 0 -113px;
-}
-#header ul li #menu2:hover, #header ul li.selected #menu2 {
-	background-position: -168px -113px;
-}
-#header ul li #menu3:hover, #header ul li.selected #menu3 {
-	background-position: -335px -113px;
-}
-#header ul li #menu4:hover, #header ul li.selected #menu4 {
-	background-position: -502px -113px;
-}
-#header ul li #menu5:hover, #header ul li.selected #menu5 {
-	background-position: -669px -113px;
+	background: url(../images/bg-page.jpg) no-repeat top;
 }
 #body {
-	background: url(../images/bg-body-header.png) no-repeat top center;
 	margin: 0 auto;
-	padding: 112px 0 0;
 	width: 960px;
+	padding-top: 150px;
 }
 #body p {
 	margin: 0;
@@ -845,7 +764,4 @@ body {
 	padding: 0;
 	text-align: center;
 	text-transform: capitalize;
-}
-#logo{
-	height: 100%;
 }
