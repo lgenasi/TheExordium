@@ -23,6 +23,9 @@
 	color: white;
 	text-decoration: none;
 }
+.btn-default:hover{
+	opacity: 0.1;
+}
 .customNav .btn-lg .active{
 	background-color: white;
 	opacity: 0.5;
