@@ -18,7 +18,16 @@
 	border: transparent;
 }
 .customNav .btn-lg{
-background-color: black;
+	background-color: black;
+	opacity: 0.5;
+	color: white;
+	text-decoration: none;
+}
+.customNav .btn-lg .active{
+	background-color: white;
+	opacity: 0.5;
+	color: white;
+	text-decoration: none;
 }
 .customNav #container{
 	height:100%;
@@ -172,7 +181,7 @@ body {
 	height: 361px;
 	margin: 0;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 	padding: 0;
 	position: relative;
 	width: 960px;
@@ -191,7 +200,7 @@ body {
 	padding: 102px 9px 22px 9px;
 	width: 960px;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 	text-align: center;
 }
 #body div div .section > div {
@@ -432,7 +441,7 @@ body {
 #body .games {
 	overflow: hidden;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 	text-align: center;
 }
 #body .games div {
@@ -519,7 +528,7 @@ body {
 	display: inline-block;
 }
 #body .games .aside ul {
- *min-height: 568px;
+	*min-height: 568px;
 	overflow: hidden;
 	padding: 5px 8px 11px;
 }
@@ -537,7 +546,7 @@ body {
 #body .about {
 	overflow: hidden;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 	text-align: center;
 }
 #body .about ul {
@@ -597,7 +606,7 @@ body {
 #body .blog {
 	overflow: hidden;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 	text-align: center;
 }
 #body .blog ul {
