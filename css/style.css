@@ -200,6 +200,7 @@ body {
 	padding: 3px 0 0;
 	width: 220px;
 	display: inline-block;
+	vertical-align: middle;
 }
 #body div div .section > div:first-child {
 	width: 440px;
