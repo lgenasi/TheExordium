@@ -9,20 +9,54 @@
 	src: url('../fonts/Philosopher-Bold/Philosopher-Bold.eot');
 	src: url('../fonts/Philosopher-Bold/Philosopher-Bold.woff') format('woff'), url('../fonts/Philosopher-Bold/Philosopher-Bold.ttf') format('truetype'), url('../fonts/Philosopher-Bold/Philosopher-Bold.svg') format('svg');
 }
+#logo{
+	height: 100%;
+}
+.customNav{
+	height: 195px;
+	background: url(../images/bg-header2.png) repeat-x top center;
+	border: transparent;
+}
+.customNav .btn-lg{
+	background-color: black;
+	opacity: 0.5;
+	color: white;
+	text-decoration: none;
+}
+.btn-default:hover{
+	opacity: 0.1;
+}
+.customNav .btn-lg .active{
+	background-color: white;
+	opacity: 0.5;
+	color: white;
+	text-decoration: none;
+}
+.customNav #container{
+	height:100%;
+	background: url(../images/bg-header.png) no-repeat top center;
+}
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+}
+.navbar .navbar-collapse {
+	text-align: center;
+}
+#navImg{
+	padding-top: 25px;
+}
+#navButtons{
+	padding-top: 15px;
+}
 body {
 	background: url(../images/bg-body.jpg) repeat;
-	color: #727272;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	line-height: 1;
-	margin: 0;
-	min-width: 960px;
-	padding: 0;
+	padding-top: 145px;
 }
 #background {
-	background: url(../images/bg-page.jpg) no-repeat top center;
+	background: url(../images/bg-page.jpg) no-repeat top;
 	margin: 0;
-	padding: 0;
+	padding: 50px;
 }
 #header {
 	background: url(../images/bg-header2.png) repeat-x top center;
@@ -150,7 +184,7 @@ body {
 	height: 361px;
 	margin: 0;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 	padding: 0;
 	position: relative;
 	width: 960px;
@@ -167,14 +201,18 @@ body {
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 102px 9px 22px 9px;
-	width: 940px;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 #body div div .section > div {
 	background: url(../images/border.gif) repeat-x top left;
-	float: left;
-	margin: 0 10px;
+	margin: 0 5px;
 	padding: 3px 0 0;
 	width: 220px;
+	display: inline-block;
+	vertical-align: top;
 }
 #body div div .section > div:first-child {
 	width: 440px;
@@ -193,6 +231,8 @@ body {
 	border: 1px solid #22272a;
 	margin: 0;
 	padding: 20px 19px;
+	height:225px;
+	vertical-align: middle;
 }
 #body div div .section div:first-child div {
 	padding: 14px 19px 30px;
@@ -404,7 +444,7 @@ body {
 #body .games {
 	overflow: hidden;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 	text-align: center;
 }
 #body .games div {
@@ -491,7 +531,7 @@ body {
 	display: inline-block;
 }
 #body .games .aside ul {
- *min-height: 568px;
+	*min-height: 568px;
 	overflow: hidden;
 	padding: 5px 8px 11px;
 }
@@ -509,7 +549,7 @@ body {
 #body .about {
 	overflow: hidden;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 	text-align: center;
 }
 #body .about ul {
@@ -569,7 +609,7 @@ body {
 #body .blog {
 	overflow: hidden;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 	text-align: center;
 }
 #body .blog ul {
