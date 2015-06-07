@@ -40,26 +40,21 @@ $(document).ready(function(){
 				selectedStreamer = streamerList[i].value;
 				for(var j = 0; j < streamers.length; j++) {
 					if (selectedStreamer == streamers[j].name){
-						$("#stream").remove();
+						$("#active").remove();
 						$('.stream-player').prepend(
-							'<object id="stream" width="500" height="300">'+
-							'	<param name="movie" value="http://fpdownload.adobe.com/strobe/FlashMediaPlayback.swf">'+
-							'	<param name="flashvars" value="src=rtmp%3a%2f%2ftheexordium.org%3a1935%2flive%2f' + streamers[j].id + '&amp;poster=http%3A%2F%2Fosmf.org%2Fimages%2Fposter_cathy_fmp.jpg&amp;streamType=live">'+
-							'	<param name="allowFullScreen" value="true">'+
-							'	<param name="allowscriptaccess" value="always">'+
-							'	<embed src="http://fpdownload.adobe.com/strobe/FlashMediaPlayback.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="500" height="300" flashvars="src=rtmp%3A%2F%2Ftheexordium.org%3A1935%2Flive%2FTom&amp;poster=http%3A%2F%2Fosmf.org%2Fimages%2Fposter_cathy_fmp.jpg&amp;streamType=live">'+
-							'</object>');
-
-
-
-							/*var newParam = document.createElement("param");
-							newParam.id = "active";
-							newParam.name = "flashvars";
-							newParam.value = "src=rtmp%3a%2f%2ftheexordium.org%3a1935%2flive%2f" + streamers[j].id + "&amp;poster=http%3A%2F%2Fosmf.org%2Fimages%2Fposter_cathy_fmp.jpg&amp;streamType=live";
-							$("#active").remove();
-							stream.appendChild(newParam);	*/						
+							'<li id="active">'+
+							'	<h3>' + streamers[j].name + '</h3>'+
+							'	<div class="stream-player">'+
+							'		<object width="500" height="300">'+
+							'			<param name="movie" value="http://fpdownload.adobe.com/strobe/FlashMediaPlayback.swf">'+
+							'			<param name="flashvars" value="src=rtmp%3a%2f%2ftheexordium.org%3a1935%2flive%2f' + streamers[j].id + '&amp;poster=http%3A%2F%2Fosmf.org%2Fimages%2Fposter_cathy_fmp.jpg&amp;streamType=live">'+
+							'			<param name="allowFullScreen" value="true">'+
+							'			<param name="allowscriptaccess" value="always">'+
+							'			<embed src="http://fpdownload.adobe.com/strobe/FlashMediaPlayback.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="500" height="300" flashvars="src=rtmp%3A%2F%2Ftheexordium.org%3A1935%2Flive%2FTom&amp;poster=http%3A%2F%2Fosmf.org%2Fimages%2Fposter_cathy_fmp.jpg&amp;streamType=live">'+
+							'		</object>'+
+							'	</div>'+
+							'</li>');				
 						}
-
 					}
 				}
 
