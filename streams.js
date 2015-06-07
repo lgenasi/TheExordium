@@ -31,7 +31,7 @@ $(document).ready(function(){
 		streamerList.appendChild(el);
 	}
 	
-	streamBtn.onclick = function(){
+	$("#selectStreamer").on("change", function(){
 		
 		var selectedStreamer;
 		for(var i = 0; i < streamerList.length; i++) {	
@@ -42,23 +42,18 @@ $(document).ready(function(){
 					if (selectedStreamer == streamers[j].name){
 						$("#active").remove();
 						$('.stream-player').prepend(
-							'<li id="active">'+
-							'	<h3>' + streamers[j].name + '</h3>'+
-							'	<div class="stream-player">'+
-							'		<object width="500" height="300">'+
-							'			<param name="movie" value="http://fpdownload.adobe.com/strobe/FlashMediaPlayback.swf">'+
-							'			<param name="flashvars" value="src=rtmp%3a%2f%2ftheexordium.org%3a1935%2flive%2f' + streamers[j].id + '&amp;poster=http%3A%2F%2Fosmf.org%2Fimages%2Fposter_cathy_fmp.jpg&amp;streamType=live">'+
-							'			<param name="allowFullScreen" value="true">'+
-							'			<param name="allowscriptaccess" value="always">'+
-							'			<embed src="http://fpdownload.adobe.com/strobe/FlashMediaPlayback.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="500" height="300" flashvars="src=rtmp%3A%2F%2Ftheexordium.org%3A1935%2Flive%2FTom&amp;poster=http%3A%2F%2Fosmf.org%2Fimages%2Fposter_cathy_fmp.jpg&amp;streamType=live">'+
-							'		</object>'+
-							'	</div>'+
-							'</li>');				
-						}
+							'<object id="active" width="900" height="600">'+
+							'	<param name="movie" value="http://fpdownload.adobe.com/strobe/FlashMediaPlayback.swf">'+
+							'	<param name="flashvars" value="src=rtmp%3a%2f%2ftheexordium.org%3a1935%2flive%2f' + streamers[j].id + '&amp;poster=http%3A%2F%2Fosmf.org%2Fimages%2Fposter_cathy_fmp.jpg&amp;streamType=live">'+
+							'	<param name="allowFullScreen" value="true">'+
+							'	<param name="allowscriptaccess" value="always">'+
+							'	<embed src="http://fpdownload.adobe.com/strobe/FlashMediaPlayback.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="500" height="300" flashvars="src=rtmp%3A%2F%2Ftheexordium.org%3A1935%2Flive%2FTom&amp;poster=http%3A%2F%2Fosmf.org%2Fimages%2Fposter_cathy_fmp.jpg&amp;streamType=live">'+
+							'</object>').hide().fadeIn(600);				
 					}
 				}
+			}
 
-			}		
-		}
-
+		}		
 	});
+
+});

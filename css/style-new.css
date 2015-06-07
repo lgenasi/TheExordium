@@ -7,6 +7,10 @@ body {
 	text-align: center;
 }
 
+#streamerList{
+	padding-top: 75px;
+}
+
 /*===================================*/
 
 #background {
@@ -15,9 +19,6 @@ body {
 
 /*===================================*/
 
-#content-header {
-	padding-top: 50px;
-}
 body #content-body{
 	background: url(../images/bg-body2.png) repeat-y center;
 	width: 960px;
