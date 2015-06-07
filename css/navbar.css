@@ -1,0 +1,40 @@
+#logo{
+	height: 100%;
+}
+.customNav{
+	height: 195px;
+	background: url(../images/bg-header2.png) repeat-x top center;
+	border: transparent;
+}
+.customNav .btn-lg{
+	background-color: black;
+	opacity: 0.5;
+	color: white;
+	text-decoration: none;
+}
+.btn-default:hover{
+	opacity: 0.1;
+}
+.customNav .btn-lg .active{
+	background-color: white;
+	opacity: 0.5;
+	color: white;
+	text-decoration: none;
+}
+.customNav #container{
+	height:100%;
+	background: url(../images/bg-header.png) no-repeat top center;
+}
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+}
+.navbar .navbar-collapse {
+	text-align: center;
+}
+#navImg{
+	padding-top: 25px;
+}
+#navButtons{
+	padding-top: 15px;
+}
