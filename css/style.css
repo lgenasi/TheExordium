@@ -1,4 +1,8 @@
 /*Website By Exordium Dev Team Based off the Template by freewebsitetemplates.com*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 @font-face {
 	font-family: 'Philosopher-Regular';
 	src: url('../fonts/Philosopher-Regular/Philosopher-Regular.eot');
