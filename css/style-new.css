@@ -1,0 +1,28 @@
+/*===================================*/
+
+body {
+	background: url(../images/bg-body.jpg) repeat;
+	padding: 145px 0 0 0;
+	margin: 0;
+	text-align: center;
+}
+
+#streamerList{
+	padding-top: 75px;
+}
+
+/*===================================*/
+
+#background {
+	background: url(../images/bg-page.jpg) no-repeat top;
+}
+
+/*===================================*/
+
+body #content-body{
+	background: url(../images/bg-body2.png) repeat-y center;
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*===================================*/
