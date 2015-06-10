@@ -3,11 +3,11 @@
 ## Dependencies
 
 Run: <br />
-	`npm install express` <br />
-	`npm install http`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`npm install express` <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`npm install http`
 
 ## How to start
 
-1. Ensure dependencies have been installed (above) <br />
-2. Run `node index.js1 <br />
-3. Navigate to `localhost:5000`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Ensure dependencies have been installed (above) <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Run `node index.js` <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Navigate to `localhost:5000`
