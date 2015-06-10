@@ -1,4 +1,19 @@
-/*Website By Exordium Dev Team Based off the Template by freewebsitetemplates.com*/
+.carousel,.item,.active{
+	height:100%;
+}
+.carousel-inner{
+	height:100%;
+}
+.carousel .item img{
+	width: auto;
+	height: 361px;
+	max-height: 361px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.fill{
+	width:100%;height:100%;background-position:center;background-size:cover;
+}
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -21,11 +36,12 @@ body {
 	background: url(../images/bg-page.jpg) no-repeat top;
 	margin: 0;
 	padding: 50px;
+    color: grey;
 }
 #body {
 	background: url(../images/bg-body-header.png) no-repeat top center;
 	margin: 0 auto;
-	padding: 112px 0 0;
+	padding: 77px 0 0;
 }
 #body p {
 	margin: 0;
@@ -55,21 +71,14 @@ body {
 	margin-right: auto;
 	padding: 0;
 	position: relative;
-	width: 960px;
-}
-#body div div .featured img {
-	display: block;
-	left: 0;
-	position: absolute;
-	top: -112px;
-	z-index: 1;
+	width: 1000px;
 }
 #body div div .section {
 	background: #0a0a0a url(../images/gradient.png) repeat-x bottom center;
 	margin: 0 auto;
 	overflow: hidden;
-	padding: 102px 9px 22px 9px;
-	width: 960px;
+	padding: 25px 9px 22px 9px;
+	max-width: 1250px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -83,7 +92,7 @@ body {
 	vertical-align: top;
 }
 #body div div .section > div:first-child {
-	width: 440px;
+	width: 500px;
 }
 #body div div .section div h4 {
 	background: #070707 url(../images/gradient2.png) repeat-x top center;
@@ -376,7 +385,7 @@ body {
 	background: url(../images/border.gif) repeat-x top left;
 	margin: 0 0 0 0px;
 	padding: 3px 0 0;
-	width: 470px;
+	width: 750px;
 	vertical-align: top;
 	display: inline-block;
 }
@@ -492,7 +501,7 @@ body {
 #body .blog .content {
 	background: url(../images/border.gif) repeat-x top left;
 	padding: 3px 0 0;
-	width: 610px;
+	width: 875px;
 	display: inline-block;
 }
 #body .blog .content ul li {
