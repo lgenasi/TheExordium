@@ -8,7 +8,8 @@ body {
 }
 
 #streamerList{
-	padding-top: 75px;
+	padding-top: 60px;
+	padding-bottom:	15px;
 }
 
 /*===================================*/
@@ -21,7 +22,7 @@ body {
 
 body #content-body{
 	background: url(../images/bg-body2.png) repeat-y center;
-	width: 960px;
+	width: 1250px;
 	margin: 0 auto;
 }
 

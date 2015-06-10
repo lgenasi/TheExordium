@@ -42,7 +42,7 @@ $(document).ready(function(){
 					if (selectedStreamer == streamers[j].name){
 						$("#active").remove();
 						$('.stream-player').prepend(
-							'<object id="active" width="900" height="600">'+
+							'<object id="active" width="925" height="600">'+
 							'	<param name="movie" value="http://fpdownload.adobe.com/strobe/FlashMediaPlayback.swf">'+
 							'	<param name="flashvars" value="src=rtmp%3a%2f%2ftheexordium.org%3a1935%2flive%2f' + streamers[j].id + '&amp;poster=http%3A%2F%2Fosmf.org%2Fimages%2Fposter_cathy_fmp.jpg&amp;streamType=live">'+
 							'	<param name="allowFullScreen" value="true">'+
