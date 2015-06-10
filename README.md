@@ -1,11 +1,14 @@
-# The Exordium (nodejs version)
+# The Exordium <br />
+(nodejs version)
 
-### Dependencies
+## Dependencies
 
-`npm install express  
-`npm install http
+Run: <br />
+	`npm install express <br />
+	`npm install http
 
-### How to start
+## How to start
 
-`node index.js  
-Navigate to `localhost:5000
+1. Ensure dependencies have been installed (above) <br />
+2. Run `node index.js <br />
+3. Navigate to `localhost:5000
