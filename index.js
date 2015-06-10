@@ -4,7 +4,6 @@ $(document).ready(function() {
 	})
 
 	$(".go-to-event").click(function(){
-		var goToCalendar = true;
-		localStorage.setItem("goToCalendar", goToCalendar);
+		localStorage.setItem("goToCalendar", true);
 	});
 });
