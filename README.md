@@ -1,5 +1,7 @@
-# TheExordium
+# The Exordium 
+## (nodejs version)
 
-npm install express
-npm install http
-npm install bower
+### Dependencies
+
+'npm install express
+'npm install http
