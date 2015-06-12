@@ -385,7 +385,7 @@ body {
 	background: url(../images/border.gif) repeat-x top left;
 	margin: 0 0 0 0px;
 	padding: 3px 0 0;
-	width: 750px;
+	width: 710px;
 	vertical-align: top;
 	display: inline-block;
 }
@@ -501,7 +501,7 @@ body {
 #body .blog .content {
 	background: url(../images/border.gif) repeat-x top left;
 	padding: 3px 0 0;
-	width: 875px;
+	width: 650px;
 	display: inline-block;
 }
 #body .blog .content ul li {
