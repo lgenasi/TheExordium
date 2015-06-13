@@ -5,7 +5,8 @@ $(document).ready(function(){
 	$.ajax({
 		method: "GET",
 		url: "http://www.theexordium.org:1935/statsXMLCORS?flat",
-		dataType: "xml"
+		dataType: "xml",
+		async: false
 	})
 	.done(function(xml){
 		$(xml).find('Stream').each(function(){
@@ -17,16 +18,14 @@ $(document).ready(function(){
 	
 	var streamerList = document.getElementById("selectStreamer"); 
 
-	setTimeout(function(){
-		for(var i = 0; i < streamers.length; i++) {
+	for(var i = 0; i < streamers.length; i++) {
 
-			var opt = streamers[i];
-			var el = document.createElement("option");
-			el.textContent = opt;
-			el.value = opt;
-			streamerList.appendChild(el);
-		}
-	}, 500);
+		var opt = streamers[i];
+		var el = document.createElement("option");
+		el.textContent = opt;
+		el.value = opt;
+		streamerList.appendChild(el);
+	}
 	
 	$("#selectStreamer").on("change", function(){
 		
