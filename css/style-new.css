@@ -7,9 +7,13 @@ body {
 	text-align: center;
 }
 
-#streamerList{
+#refresh{
 	padding-top: 60px;
 	padding-bottom:	15px;
+}
+
+#streamerList{
+	padding-bottom: 15px;
 }
 
 /*===================================*/
