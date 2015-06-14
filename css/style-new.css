@@ -1,28 +1,27 @@
 /*===================================*/
 
 body {
-	background: url(../images/bg-body.jpg) repeat;
-	padding: 145px 0 0 0;
-	margin: 0;
+	background: url("../images/bg-body.jpg") repeat;
+}
+#background{
+	border-top: 145px solid transparent;
+	background-image:url("../images/bg-page.jpg");
+	background-origin:padding-box;
+	background-repeat:no-repeat;
+	background-position: center;
+	height: 1027px;
+	padding-top: 50px;
+}
+#buttonDiv{
 	text-align: center;
 }
-
+#streamDiv{
+	text-align: center;
+}
 #refresh{
 	padding-top: 60px;
-	padding-bottom:	15px;
+	padding-bottom:	50px;
 }
-
-#streamerList{
-	padding-bottom: 15px;
-}
-
-/*===================================*/
-
-#background {
-	background: url(../images/bg-page.jpg) no-repeat top;
-}
-
-/*===================================*/
 
 body #content-body{
 	background: url(../images/bg-body2.png) repeat-y center;
@@ -40,4 +39,13 @@ body #content-body{
 	background-size: cover;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#refreshBtn{
+	width: 70px;
+	height: 70px;
+	background-image: url(../images/refresh.png);
+	background-position: center;
+	background-size: cover;
+	background-color: white;
 }
