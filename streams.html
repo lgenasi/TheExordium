@@ -32,17 +32,23 @@
 </nav>
 <body>
 	<div id="background">
-		<form id="streamerList">
-			<select id="selectStreamer">
-				<option>Choose a Streamer</option>
-			</select>
-		</form>
-		<img id="content-header" src="images/bg-body-header.png">
-		<div id="content-body" style="height:615px">
-			<div class="stream-player">
-			</div>				
+		<div id="buttonDiv" class="col-md-3">
+			<div id="refresh">
+				<button id="refreshBtn"></button>
+			</div>
+			<div id="streamerList">
+			</div>
 		</div>
-		<img id="content-footer" src="images/bg-body-footer.png">
+		<div id="streamDiv" class="col-md-9">
+			<div>
+				<img id="content-header" src="images/bg-body-header.png">
+				<div id="content-body">
+					<div class="stream-player">
+					</div>			
+				</div>
+				<img id="content-footer" src="images/bg-body-footer.png">
+			</div>	
+		</div>
 	</div>
 </body>
 </html>
