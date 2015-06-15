@@ -387,6 +387,7 @@ body {
 	width: 710px;
 	vertical-align: top;
 	display: inline-block;
+	text-align: left;
 }
 #body .games .content ul {
 	padding: 16px 19px 1px;
