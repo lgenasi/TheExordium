@@ -1,4 +1,14 @@
+<?php
+define('IN_PHPBB', true);
+$phpbb_root_path = './phpBB3/';
+$phpEx = substr(strrchr(__FILE__, '.'), 1);
+include($phpbb_root_path . 'common.' . $phpEx);
 
+// Start session management
+$user->session_begin();
+$auth->acl($user->data);
+$user->setup();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -45,10 +55,10 @@
 		</div>
 
 		<script type="text/javascript">
-			var userId = "1";
+			var userId = <?php echo json_encode($user->data['user_id']); ?>;
 			if (userId != 1){
 				$('#loginForm').hide();
-				var sid = "6216687ab438cc2070c3e57287b49dc9";
+				var sid = <?php echo json_encode($user->data['session_id']); ?>;
 				var logoutForm = document.createElement("form");
 				logoutForm.id = "logoutForm";
 				logoutForm.method = "post";
