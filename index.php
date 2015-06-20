@@ -142,32 +142,25 @@ $user->setup();
 						<div>
 							<h3>Forum</h3>
 							<div id="loginDiv">
-
-								<form id="loginForm" method="post" action="http://www.theexordium.org/phpBB3/ucp.php?mode=login">
-									<label for="username" title="Username" style="max-width: 67px;">Username</label>
-									<input type="text" name="username" id="username" size="10" class="inputbox" title="Username">
-									<label for="password" title="Password">Password</label>
-									<input type="password" name="password" id="password" size="10" class="inputbox" title="Password">
-									<input id="loginBtn" type="submit" name="login" value="Login" class="btn btn-default navbar-btn">
-									<a id="registerLink" href="http://www.theexordium.org/phpBB3/ucp.php?mode=register">Register</a>
-								</form>
 							</div>
 							<script type="text/javascript">
 								var userId = <?php echo json_encode($user->data['user_id']); ?>;
-								if (userId != 1){
-									$('#loginForm').hide();
-									var sid = <?php echo json_encode($user->data['session_id']); ?>;
-									var logoutForm = document.createElement("form");
-									logoutForm.id = "logoutForm";
-									logoutForm.method = "post";
-									logoutForm.action = "http://www.theexordium.org/phpBB3/ucp.php?mode=logout&sid=" + sid;
-									$('#loginDiv').prepend(logoutForm);
-									var logoutBtn = document.createElement("button");
-									logoutBtn.type = "submit";
-									logoutBtn.textContent = "Logout";
-									$('#logoutForm').append(logoutBtn);
-								} else {
-									$('#logoutForm').hide();
+								if (userId != 1){ // they aren't logged in
+									$('#loginDiv').empty();
+									$('#loginDiv').prepend(
+										'<a href="http://www.theexordium.org/phpBB3/dkp.php?page=planner" class="figure" class="figure"><img src="images/calendar.jpg" alt=""></a>'+
+										'<span><a href="http://www.theexordium.org/phpBB3/dkp.php?page=planner">Check the Calendar</a></span>');	
+								} else { // they are logged in
+									$('#loginDiv').empty();
+									$('#loginDiv').prepend(
+										'<form id="loginForm" method="post" action="http://www.theexordium.org/phpBB3/ucp.php?mode=login">'+
+										'	<label for="username" title="Username" style="max-width: 67px;">Username</label>'+
+										'	<input type="text" name="username" id="username" size="10" class="inputbox" title="Username">'+
+										'	<label for="password" title="Password">Password</label>'+
+										'	<input type="password" name="password" id="password" size="10" class="inputbox" title="Password">'+
+										'	<input id="loginBtn" type="submit" name="login" value="Login" class="btn btn-default navbar-btn">'+
+										'	<a id="registerLink" href="http://www.theexordium.org/phpBB3/ucp.php?mode=register">Register</a>'+
+										'</form>');
 								}
 							</script>
 						</div>
