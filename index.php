@@ -83,6 +83,7 @@ $user->setup();
 									<li data-target="#myCarousel" data-slide-to="1"></li>
 									<li data-target="#myCarousel" data-slide-to="2"></li>
 									<li data-target="#myCarousel" data-slide-to="3"></li>
+									<li data-target="#myCarousel" data-slide-to="4"></li>
 								</ol>
 								<div class="carousel-inner">
 									<div class="active item">
@@ -95,7 +96,7 @@ $user->setup();
 										</div>
 									</div>
 									<div class="item">
-										<img src="./images/best-game1.jpg">
+										<img src="./images/swtorbanner.png">
 										<div class="carousel-caption">
 											<h1></h1>
 										</div>
@@ -104,7 +105,7 @@ $user->setup();
 										</div>
 									</div>
 									<div class="item">
-										<img src="./images/best-game2.jpg">
+										<img src="./images/heroes.png">
 										<div class="carousel-caption">
 											<h1></h1>
 										</div>
@@ -113,7 +114,7 @@ $user->setup();
 										</div>
 									</div>
 									<div class="item">
-										<img src="./images/grouppic.jpg">
+										<img src="./images/warcraft.png">
 										<div class="carousel-caption">
 											<h1></h1>
 										</div>
@@ -122,7 +123,7 @@ $user->setup();
 										</div>
 									</div>
 									<div class="item">
-										<img src="./images/video4.jpg">
+										<img src="./images/minecraft.png">
 										<div class="carousel-caption">
 											<h1></h1>
 										</div>
