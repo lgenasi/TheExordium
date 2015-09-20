@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Home - The Exordium</title>
+	<link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/navbar.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="./lib/dropzone/dropzone.css" />
+
+	<script type="text/javascript" src="./lib/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="./lib/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./lib/dropzone/dropzone.js"></script>
+	<script type="text/javascript" src="./gallery.js"></script>
+</head>
+<nav class="navbar navbar-inverse navbar-fixed-top customNav">
+	<div id="container">
+		<div class="collapse navbar-collapse" id="navImg">
+			<a class="nav navbar-nav">
+				<img id="navbarLogo" alt="Brand" src="images/logo.png">
+			</a>
+		</div>
+		<div class="collapse navbar-collapse" id="navButtons">
+			<div class="nav navbar-nav">
+				<a role="button" class="btn-lg btn-default navbar-btn active" href="index.html">Home</a>
+				<a role="button" class="btn-lg btn-default navbar-btn" href="games.html">Games</a>
+				<a role="button" class="btn-lg btn-default navbar-btn" href="http://www.theexordium.org/phpBB3/portal.php">Forum</a>
+				<a role="button" class="btn-lg btn-default navbar-btn" href="streams.html">Streams</a>
+				<a role="button" class="btn-lg btn-default navbar-btn" href="about.html">About</a>
+			</div>
+		</div>
+	</div>
+</nav>
+<body>
+	<div id="background">
+		<div id="body">
+			<div>
+				<div>
+					<div class="featured">
+					</div>
+					<div class="section">
+						<button type="button" id="uploadBtn" class="btn btn-lg" data-toggle="modal" data-target="#uploadModal">
+							Upload images
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+						<form id="myDropzone" action="/file-upload" method="post" enctype="multipart/form-data" class="dropzone"></form>
+					</div>
+					<div class="modal-footer">
+						<button id="upload-btn" class="btn btn-info indicator"><i class="icon-ok"></i> Upload</button>
+						<button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
